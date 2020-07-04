@@ -1,11 +1,13 @@
 package machine
 
+import java.util.*
+
 fun main() {
-    println("Starting to make a coffee")
-    println("Grinding coffee beans")
-    println("Boiling water")
-    println("Mixing boiled water with crushed coffee beans")
-    println("Pouring coffee into the cup")
-    println("Pouring some milk into the cup")
-    println("Coffee is ready!")
+    val scanner = Scanner(System.`in`)
+    print("Write how many cups of coffee you will need: > ")
+    val n = scanner.nextInt()
+    print("For " + n + " cups of coffee you will need:\n"
+            + n * 200 + " ml of water\n"
+            + n * 50 + " ml of milk\n"
+            + n * 15 + " g of coffee beans")
 }
